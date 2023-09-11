@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "星际公民工具网站汉化",
+  "version": "0.9.6",
+  "description": "Sc_Chinese_Translate",
+  "permissions": ["activeTab", "storage"],
+  "action": {
+  "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js","jquery.min.js"]
+    }
+  ]
+}
