@@ -30,7 +30,7 @@ async function myScript() {
       lang = "zh-CN";
     }
     if(SUPPORT_LANG.includes(lang)) {
-      const response = await fetch('https://cdn.jsdelivr.net/gh/CxJuice/Uex_Chinese_Translate@main/zh-CN-uex2.2.json');
+      const response = await fetch('https://pub-3798dc65b69e474ab006cba98cbbbfd9.r2.dev/zh-CN-uex2.2.json');
       const data = await response.json();
       return data;
     }
